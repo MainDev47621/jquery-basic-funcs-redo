@@ -50,22 +50,22 @@ body {
     border: none;
 }
 
-/* .img-box {
-    border: var(--border);
-} */
+.img-box img {
+    height: 98%;;
+}
 
 .view-code-section {
     border-top: var(--border);
     grid-column: 1 / -1;
 }
 
-.func-btn-box, .view-code-section {
+.func-btn-box, .img-box, .view-code-section {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 893px) {
     .effects-section {flex-direction: column;}
     .effects-container {width: 60%;}
 }
