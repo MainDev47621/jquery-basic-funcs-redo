@@ -39,4 +39,34 @@ $(document).ready(() => {
     $('#slide-toggle-btn').on('click', () => {
         $('#img-three').slideToggle();
     });
+
+
+    // Code modal
+    $('.close-icon').on('click', () => {
+        $('.page-mask').fadeOut('fast');
+        $('.code-modal').removeClass('show');
+    });
+
+    $('.page-mask').on('click', () => {
+        $('.page-mask').fadeOut('fast');
+        $('.code-modal').removeClass('show');
+    });
+
+    // Code modal for the show/hide/toggle functions
+    $('#view-code-btn-one').on('click', () => {
+        $('.page-mask').fadeIn('fast');
+        $('#show-hide-modal').addClass('show');
+    });
+
+    // Code modal for the fade functions
+    $('#view-code-btn-two').on('click', () => {
+        $('.page-mask').fadeIn('fast');
+        $('#fade-modal').addClass('show');
+    });
+
+    // Code modal for the slide functions
+    $('#view-code-btn-three').on('click', () => {
+        $('.page-mask').fadeIn('fast');
+        $('#slide-modal').addClass('show');
+    });
 });
